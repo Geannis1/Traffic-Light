@@ -1,16 +1,16 @@
-var culoare = "rosu";
-var btn = document.getElementById("buton");
-setInterval(SchimbaCuloarea, 10000);
-btn.addEventListener("click", SchimbaCuloarea);
-function SchimbaCuloarea() {
-        if(culoare == "rosu"){
-            culoare = "galben";
+var color = "red";
+var btn = document.getElementById("button");
+setInterval(ChangeColor, 10000);
+btn.addEventListener("click", ChangeColor);
+function ChangeColor() {
+        if(color == "red"){
+            color = "yellow";
             btn.style.backgroundColor = 'yellow';
-        }else if(culoare == "galben"){
-            culoare = "verde";
+        }else if(culoare == "yellow"){
+            color = "green";
             btn.style.backgroundColor = "green";
-        }else if(culoare == "verde"){
-            culoare = "rosu";
+        }else if(color == "green"){
+            color = "red";
             btn.style.backgroundColor = "red";
         }
 };
