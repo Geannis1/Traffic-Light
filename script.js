@@ -1,8 +1,8 @@
 let color = "red";
 let btn = document.getElementById("btn");
-setInterval(ChangeColor, 3000);
+setInterval(changeColor, 3000);
 
-function ChangeColor() {
+function changeColor() {
         switch(color){
             case 'red':
                 color = "yellow";
